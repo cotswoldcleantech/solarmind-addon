@@ -1,0 +1,14 @@
+name: SolarMind
+version: "0.1.0"
+slug: solarmind
+description: AI energy management for solar, battery and EV against live Octopus Agile prices
+url: https://github.com/cotswoldcleantech/solarmind-addon
+arch:
+  - amd64
+image: ghcr.io/cotswoldcleantech/solarmind
+init: false
+ports:
+  8000/tcp: 8000
+ports_description:
+  8000/tcp: SolarMind dashboard and API
+webui: "http://[HOST]:[PORT:8000]"
